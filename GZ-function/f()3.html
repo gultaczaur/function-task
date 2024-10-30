@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkNumber(number) {
+            if (number.length === 4) {
+                if (number[0] === number[3] && number[1] === number[2]) {
+                    return "YES";
+                } else {
+                    return "NO";
+                }
+            } else {
+                return "Zəhmət olmasa dörd rəqəmli ədəd daxil edin.";
+            }
+            
+        }
+        const userInput = prompt("Dörd rəqəmli bir ədəd daxil edin:");
+        console.log(checkNumber(userInput));
+
+    </script>
+</body>
+
+</html>
